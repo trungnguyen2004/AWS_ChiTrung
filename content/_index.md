@@ -5,13 +5,13 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 ### Student Information:
+
 &emsp; **Full Name:** Nguyen Chi Trung
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0936616647
 
 &emsp; **Email:** trung.nguyenbkhcm@hcmut.edu.vn
 

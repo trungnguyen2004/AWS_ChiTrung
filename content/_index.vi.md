@@ -6,10 +6,12 @@ chapter: false
 ---
 
 # Báo cáo thực tập
+
 ### Thông tin sinh viên:
+
 &emsp; **Họ và tên:** Nguyễn Chí Trung
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0936616647
 
 &emsp; **Email:** trung.nguyenbkhcm@hcmut.edu.vn
 
@@ -26,8 +28,6 @@ chapter: false
 &emsp; **Thời gian thực tập:** Từ ngày 01/06/2026 đến ngày 31/07/2026
 
 ![Ảnh đại diện của bạn](/images/avatar.png)
-
-
 
 ### Nội dung báo cáo
 

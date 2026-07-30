@@ -17,7 +17,7 @@ Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi em chưa hi�
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
 Công việc em được giao phù hợp với kiến thức em đã học ở trường, đồng thời mở rộng thêm những mảng mới mà em chưa từng được tiếp cận. Nhờ vậy, em vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
 
-**6. Thời gian linh hoạt**  
+**4. Thời gian linh hoạt**  
 Công ty có hỗ trợ tạo điều kiện về thời gian linh hoạt cho sinh viên.
 
 ### Một số câu hỏi khác

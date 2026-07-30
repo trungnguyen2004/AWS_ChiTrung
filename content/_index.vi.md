@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Trường:** Đại học Bách Khoa TP.HCM
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** Khoa học máy tính
 
 &emsp; **Lớp:** AWS082025
 

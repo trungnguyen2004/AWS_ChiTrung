@@ -6,120 +6,89 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ x Agentic AI Build Week”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Sự kiện FCAJ x Agentic AI Build Week được tổ chức với mục đích chính là tạo sân chơi thực tế cho cộng đồng FCAJ (First Cloud Journey) nhằm ứng dụng công nghệ Agentic AI và hạ tầng điện toán đám mây AWS để giải quyết các bài toán thực tiễn.
+
+Thông qua cuộc thi, ban tổ chức hướng tới các mục tiêu cụ thể sau:
+
+Hiện thực hóa ý tưởng: Khuyến khích người tham dự xây dựng sản phẩm từ ý tưởng sơ khai thành các giải pháp hoàn chỉnh, có khả năng triển khai thực tế (từ POC đến Production).
+
+Rèn luyện kỹ năng toàn diện: Không chỉ tập trung vào kỹ thuật, sự kiện còn giúp người tham gia trau dồi tư duy giải quyết vấn đề (pain points), khả năng làm việc nhóm, quản lý dự án dưới áp lực thời gian và kỹ năng thuyết trình (pitching) trước ban giám khảo.
+
+Giao lưu và học hỏi: Tạo môi trường kết nối, nơi các thành viên có thể chia sẻ kiến thức, kinh nghiệm "xương máu" từ quá trình xây dựng sản phẩm thực tế, từ đó hỗ trợ phát triển sự nghiệp trong ngành công nghệ.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **team AI-powered conversation ordering**
+- **team Signal Scout** - Hoàng Hiếu, Quốc Hào, Minh Quân, Công Minh, Duy Khiêm, Tấn Lực
+- **team Solution Architect Professional Native App** - Phạm Tiến Thuận Phát, Huỳnh Hoàng Long, Lê Minh Nghĩa, Trần Đại Vỹ, Nguyễn Ấn
+- **team 3K** - Nguyễn Quốc Huy, Huỳnh An Khương, Hoàng Lê Thành Đức, Ngô Quang Khôi, Đặng Nguyễn Phước Lộc
+- **team Adaptive AML Workflow Engine** - Bui Hoàng Việt, Nguyễn Lam Anh, Nguyễn Văn Linh, Nguyễn Cảnh Nguyên, Nguyễn Minh Nhật, Trần Phương Huyền
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Team Signal Scout:
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Mục tiêu: Phát triển hệ thống phân tích chiến lược doanh nghiệp bằng cách tổng hợp các tín hiệu rời rạc từ báo cáo tài chính và các cuộc tọa đàm.
+Công nghệ cốt lõi: Sử dụng kiến trúc Agentic Core Management trên AWS, đóng vai trò như một "supervisor" điều phối các Sub-agents và bộ nhớ Agent Core Memory để tổng hợp thông tin, hỗ trợ đưa ra quyết định kinh doanh dựa trên dữ liệu rời rạc.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Team Solution Architect Professional Native App:
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Mục tiêu: Hỗ trợ các Solutions Architect (SA) thiết kế hạ tầng nhanh chóng, đặc biệt khi khách hàng có yêu cầu gấp.
+Nội dung nổi bật: Người dùng nhập yêu cầu bằng ngôn ngữ tự nhiên, hệ thống sẽ tự động vẽ sơ đồ kiến trúc trên Draw.io, tính toán chi phí và xuất mã Infrastructure as Code (IaC) như Terraform. Giải pháp này tập trung vào việc giải quyết bài toán cần đáp ứng yêu cầu khách hàng gấp rút trong thời gian ngắn
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+##### Team 3K:
 
-#### Domain-Driven Design (DDD)
+Mục tiêu: Dự án Sheper (Small Human Flow Estimation) dùng để giám sát mật độ người tại các khu vực đông đúc (sân bay, siêu thị).
+Nội dung nổi bật: Sử dụng thuật toán YOLO kết hợp với Computer Vision để giám sát mật độ người tại các khu vực đông đúc theo thời gian thực và tích hợp AI Agent để đưa ra các cảnh báo và đề xuất giải pháp xử lý ùn tắc.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Team Adaptive AML Workflow Engine (Team Sixer):
 
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+Mục tiêu: Xây dựng quy trình xử lý chống rửa tiền (AML - Anti-Money Laundering) cho các tổ chức tài chính.
+Nội dung nổi bật: Hệ thống tập trung vào tính bảo mật, khả năng giám sát (CloudWatch, X-Ray) và cơ chế Human-in-the-loop để xử lý các giao dịch nghi vấn mà AI chưa đủ chắc chắn để tự ra quyết định.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư duy sản phẩm
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Các đội nhấn mạnh việc không nên chỉ tập trung vào công nghệ (tech-centric) mà phải bắt đầu từ nỗi đau thực tế (pain points) của doanh nghiệp để đảm bảo sản phẩm có giá trị sử dụng.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kỹ năng thực thi
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Ưu tiên xây dựng bản MVP (Minimum Viable Product) chạy được thay vì sa đà vào lý thuyết.
+Kiểm soát phạm vi dự án (Scope control) để tránh tình trạng "phình" ý tưởng dẫn đến không kịp hoàn thiện sản phẩm trong 24-48 giờ.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Teamwork
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+Thành công đến từ việc phân chia công việc rõ ràng theo sở trường (backend, frontend, design, research) và tinh thần đồng lòng, gạt bỏ cái tôi cá nhân khi làm việc nhóm dưới áp lực cao.
+
+#### Tâm thế khi tham gia hackathon
+
+Đừng quá đặt nặng giải thưởng, hãy tập trung vào trải nghiệm, học hỏi từ những khó khăn (như thiếu ngủ, lỗi kỹ thuật) và mở rộng kết nối với cộng đồng.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Áp dụng tư duy MVP:** Ưu tiên xây dựng phiên bản sản phẩm tối thiểu có thể hoạt động trước, sau đó mới bổ sung các tính năng nâng cao.
+- **Vận dụng các dịch vụ AWS:** Tìm hiểu và thử áp dụng các dịch vụ như Amazon Bedrock, Lambda, DynamoDB và S3 vào các project cá nhân để xây dựng ứng dụng AI trên nền tảng cloud.
+- **Cải thiện quy trình làm việc nhóm:** Phân chia công việc theo năng lực của từng thành viên, quản lý phạm vi dự án hợp lý và ưu tiên hoàn thành các mục tiêu quan trọng đúng tiến độ.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **“FCAJ x Agentic AI Build Week”** giúp em có cơ hội quan sát cách các đội phát triển một sản phẩm AI hoàn chỉnh chỉ trong thời gian ngắn. Một số trải nghiệm nổi bật gồm:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Tiếp cận các dự án AI thực tế
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+Em được tìm hiểu nhiều ý tưởng ứng dụng Agentic AI kết hợp với các dịch vụ AWS để giải quyết các bài toán như giám sát đám đông, hỗ trợ thiết kế kiến trúc cloud và phát hiện giao dịch bất thường.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Học hỏi quy trình phát triển sản phẩm
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+Qua phần pitching và demo của các đội thi, em hiểu rõ hơn cách xây dựng MVP, xác định đúng bài toán cần giải quyết và trình bày giá trị của sản phẩm trước hội đồng đánh giá.
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+#### Rút ra kinh nghiệm về làm việc nhóm và quản lý thời gian
+
+Các chia sẻ từ các đội thi giúp em nhận thấy việc phân chia nhiệm vụ hợp lý, kiểm soát phạm vi dự án và tập trung vào những chức năng cốt lõi là yếu tố quan trọng để hoàn thành sản phẩm đúng thời hạn.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

@@ -6,121 +6,93 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "FCAJ x Agentic AI Build Week"
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The "FCAJ x Agentic AI Build Week" event was organized with the main goal of creating a real-world playground for the FCAJ (First Cloud AI Journey) community to apply Agentic AI technology and AWS cloud computing infrastructure to solve practical problems.
+
+Through the competition, the organizers aimed at the following specific objectives:
+
+**Realizing ideas:** Encourage participants to transform initial ideas into complete, implementable solutions with real-world deployment potential (from POC to Production).
+
+**Developing comprehensive skills:** Beyond technical skills, the event helps participants hone problem-solving thinking (identifying pain points), teamwork ability, project management under time pressure, and pitching skills before judges.
+
+**Networking and learning:** Create a connecting environment where members can share knowledge, real-world experience from the product development process, thereby supporting career development in the technology industry.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **team AI-powered conversation ordering**
+- **team Signal Scout** - Hoàng Hiếu, Quốc Hào, Minh Quân, Công Minh, Duy Khiêm, Tấn Lực
+- **team Solution Architect Professional Native App** - Phạm Tiến Thuận Phát, Huỳnh Hoàng Long, Lê Minh Nghĩa, Trần Đại Vỹ, Nguyễn Ấn
+- **team 3K** - Nguyễn Quốc Huy, Huỳnh An Khương, Hoàng Lê Thành Đức, Ngô Quang Khôi, Đặng Nguyễn Phước Lộc
+- **team Adaptive AML Workflow Engine** - Bui Hoàng Việt, Nguyễn Lam Anh, Nguyễn Văn Linh, Nguyễn Cảnh Nguyên, Nguyễn Minh Nhật, Trần Phương Huyền
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Team Signal Scout:
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Objective:** Develop a business strategy analysis system by synthesizing discrete signals from financial reports and forums.
 
-#### Transitioning to modern application architecture – Microservices
+**Core Technology:** Using Agentic Core Management architecture on AWS, serving as a "supervisor" coordinating Sub-agents and Agent Core Memory to synthesize information and support business decision-making based on discrete data.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Team Solution Architect Professional Native App:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+**Objective:** Support Solutions Architects (SA) in quickly designing infrastructure, especially when customers have urgent requests.
 
-#### Domain-Driven Design (DDD)
+**Notable Content:** Users input requirements in natural language, and the system automatically draws architecture diagrams on Draw.io, calculates costs, and exports Infrastructure as Code (IaC) like Terraform. This solution focuses on solving the problem of meeting urgent customer requirements in a short timeframe.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Team 3K:
 
-#### Event-Driven Architecture
+**Objective:** The Sheper project (Small Human Flow Estimation) is used to monitor human density in crowded areas (airports, supermarkets).
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+**Notable Content:** Uses YOLO algorithm combined with Computer Vision to monitor human density in crowded areas in real-time and integrates AI Agent to provide alerts and congestion resolution suggestions.
 
-#### Compute Evolution
+#### Team Adaptive AML Workflow Engine (Team Sixer):
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+**Objective:** Build an Anti-Money Laundering (AML) processing workflow for financial organizations.
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+**Notable Content:** The system focuses on security, monitoring capability (CloudWatch, X-Ray), and Human-in-the-loop mechanism to handle suspicious transactions where AI is not confident enough to make independent decisions.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Product Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+The teams emphasized not focusing only on technology (tech-centric) but starting from real business pain points to ensure the product has practical value.
 
-#### Technical Architecture
+#### Execution Skills
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Prioritize building an MVP (Minimum Viable Product) that runs rather than getting bogged down in theory.
+- Control project scope to avoid concept expansion leading to incomplete products in 24-48 hours.
 
-#### Modernization Strategy
+#### Teamwork
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+Success comes from clear task division according to each member's strengths (backend, frontend, design, research) and team spirit, setting aside personal ego when working under high pressure.
+
+#### Mindset When Participating in Hackathons
+
+Don't overemphasize prizes; focus on the experience, learn from difficulties (like sleep deprivation, technical errors), and expand connections with the community.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Apply MVP thinking:** Prioritize building a minimal viable product version first, then add advanced features.
+- **Leverage AWS services:** Study and apply services like Amazon Bedrock, Lambda, DynamoDB, and S3 to personal projects to build AI applications on cloud platforms.
+- **Improve team workflow:** Divide work according to each member's abilities, manage project scope appropriately, and prioritize completing important objectives on schedule.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the "FCAJ x Agentic AI Build Week" workshop gave me the opportunity to observe how teams develop a complete AI product in a short time. Notable experiences include:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Accessing Real AI Projects
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+I learned about many application ideas combining Agentic AI with AWS services to solve problems such as crowd monitoring, supporting cloud architecture design, and detecting anomalous transactions.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Learning Product Development Process
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+Through the pitching and demos of competing teams, I better understood how to build MVPs, correctly identify problems to solve, and present product value before judges.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Gaining Experience in Teamwork and Time Management
+
+Insights from the competing teams helped me realize that reasonable task division, project scope control, and focusing on core features are important factors for completing products on time.
 
 #### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

@@ -6,12 +6,12 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.
+During my internship at **Amazon Web Services (AWS) Vietnam** through the **AWS First Cloud AI Journey (FCAJ)** program from **June 1, 2026** to **July 31, 2026**, I had the opportunity to learn, practice, and apply the knowledge I acquired at school to a real-world working environment.  
+During the internship, I **studied and improved my knowledge of AWS services through documentation, instructional videos, and practical exercises**, while also **participating in implementing the TrackerMaintenance project (ProCare System) with team members**. Through this, I improved my skills in **learning new technologies, analyzing requirements, writing documentation, teamwork, and communication**.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+In terms of work conduct, I always strived to complete tasks well, complied with company regulations, and actively engaged with colleagues to improve work efficiency.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+To objectively reflect on my internship process, I would like to evaluate myself based on the following criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |

@@ -74,4 +74,4 @@ Tham gia buổi FCAJ Meetup giúp em có cơ hội lắng nghe những chia sẻ
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-<img src="13_6.png" alt="event 13/6" width="1000" />
+![event 13/6](13_6.png)

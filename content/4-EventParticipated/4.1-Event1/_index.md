@@ -70,4 +70,4 @@ One of the most valuable sessions was the presentation on designing a URL Shorte
 
 #### Some event photos
 
-<img src="13_6.png" alt="event 13/6" width="1000" />
+![event 13/6](13_6.png)

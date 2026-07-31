@@ -18,8 +18,6 @@ The organizers aimed to achieve the following objectives:
 - **Industry Experience Sharing:** Introduce real working environments, software development processes, and the key skills required in professional organizations.
 - **Enhancing AWS Knowledge:** Demonstrate how to design and deploy cloud-based systems on AWS through practical use cases and real-world examples.
 
-### Speakers
-
 ### Key Highlights
 
 #### Working Culture in Professional Organizations

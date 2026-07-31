@@ -18,12 +18,6 @@ Thông qua sự kiện, ban tổ chức hướng tới các mục tiêu sau:
 - **Chia sẻ kinh nghiệm thực tế:** Giới thiệu môi trường làm việc, quy trình phát triển sản phẩm và những kỹ năng cần có khi làm việc trong doanh nghiệp.
 - **Nâng cao kiến thức AWS:** Minh họa cách thiết kế và triển khai hệ thống trên nền tảng AWS thông qua các ví dụ thực tế.
 
-### Danh Sách Diễn Giả
-
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
-
 ### Nội Dung Nổi Bật
 
 #### Văn hóa làm việc trong doanh nghiệp

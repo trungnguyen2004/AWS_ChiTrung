@@ -47,7 +47,6 @@ Toàn bộ cơ sở hạ tầng được triển khai trên AWS trong mạng n�
 - **AWS Lambda & Amazon SNS:** Xử lý luồng sự kiện tự động (Event-Driven). Khi có file mới trên S3, Lambda sẽ được kích hoạt để xử lý và SNS sẽ gửi thông báo đến kỹ thuật viên.
 - **Amazon CloudWatch:** Dịch vụ giám sát và lưu trữ log tập trung để phát hiện lỗi hệ thống.
 
-![Kiến trúc hệ thống](/images/2-Proposal/architecture.png?classes=shadow)
 ![System Architecture](/AWS_ChiTrung/images/2-Proposal/AWS_Architecture_new.drawio.webp?classes=shadow)
 
 **Các luồng dữ liệu chính:**

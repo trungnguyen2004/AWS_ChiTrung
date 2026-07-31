@@ -49,7 +49,7 @@ Amazon Bedrock
   │ (Streams response in real time)
   ▼
 Client receives streamed data
-````
+```
 
 Client initialization: the client points `endpoint_url` to the API Gateway, disables client-side signing (`signature_version = UNSIGNED`), and attaches the JWT token in the header.
 
@@ -63,9 +63,9 @@ Streamed response: the API Gateway streams data chunks (`contentBlockDelta`) dir
 
 Because it sits at the API Gateway layer, you can easily add advanced features:
 
-* Prompt & Response Caching: cache common queries to reduce API costs and latency.
-* AWS WAF Integration: add security rules to prevent SQLi, XSS, or enforce IP restrictions.
-* Custom Content Filtering: add logic to filter sensitive data (PII) within Lambda before sending the prompt to Bedrock.
+- Prompt & Response Caching: cache common queries to reduce API costs and latency.
+- AWS WAF Integration: add security rules to prevent SQLi, XSS, or enforce IP restrictions.
+- Custom Content Filtering: add logic to filter sensitive data (PII) within Lambda before sending the prompt to Bedrock.
 
 ## Conclusion
 
@@ -73,11 +73,9 @@ The AI Gateway pattern strikes a great balance between developer experience and 
 
 ## References
 
-* **AWS Compute Blog – Building an AI gateway to Amazon Bedrock with Amazon API Gateway:**
+- **AWS Compute Blog – Building an AI gateway to Amazon Bedrock with Amazon API Gateway:**
   https://aws.amazon.com/blogs/compute/building-an-ai-gateway-to-amazon-bedrock-with-amazon-api-gateway/
-  
-* **GitHub Repository:**
+- **GitHub Repository:**
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
-  
-<img src="/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
 
+<img src="/AWS_ChiTrung/images/Blogs/blog1.png" alt="Blog 1" width="1000" />

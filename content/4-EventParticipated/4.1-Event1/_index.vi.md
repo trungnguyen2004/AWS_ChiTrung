@@ -73,3 +73,5 @@ Tham gia buổi FCAJ Meetup giúp em có cơ hội lắng nghe những chia sẻ
 Đặc biệt, phần chia sẻ về kiến trúc hệ thống URL Shortener trên AWS giúp em có cái nhìn trực quan hơn về cách các dịch vụ AWS được kết hợp để xây dựng một hệ thống thực tế. Bên cạnh đó, những kinh nghiệm về tư duy phản biện, giao tiếp và làm việc nhóm cũng là những bài học hữu ích mà em có thể áp dụng trong quá trình học tập và thực hiện các dự án sau này.
 
 #### Một số hình ảnh khi tham gia sự kiện
+
+<img src="13_6.png" alt="event 13/6" width="1000" />

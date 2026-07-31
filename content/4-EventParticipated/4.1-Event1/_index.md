@@ -69,3 +69,5 @@ Attending the FCAJ Meetup gave me the opportunity to learn from experienced engi
 One of the most valuable sessions was the presentation on designing a URL Shortener system on AWS, which provided a practical example of how multiple AWS services can be integrated to build a scalable, secure, and high-performance application. In addition, the discussions on critical thinking, communication, and teamwork offered useful insights that I can apply to my studies and future software development projects.
 
 #### Some event photos
+
+<img src="13_6.png" alt="event 13/6" width="1000" />

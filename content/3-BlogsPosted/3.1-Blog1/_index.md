@@ -79,3 +79,7 @@ The AI Gateway pattern strikes a great balance between developer experience and 
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
 
 <img src="/AWS_ChiTrung/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
+
+## Published Post
+
+[https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/](https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/)

@@ -1,4 +1,3 @@
-
 ---
 title: "Blog 3"
 date: 2026-07-26
@@ -64,7 +63,7 @@ MiniMax M2.5 Model
   │ (5) Tổng hợp & phản hồi câu trả lời tự nhiên
   ▼
 Client nhận kết quả cuối cùng
-````
+```
 
 Chi tiết các bước thực hiện code (OpenAI Python SDK):
 
@@ -88,6 +87,12 @@ Sự góp mặt của MiniMax family trên Amazon Bedrock mang lại thêm một
 
 ## Tài liệu tham khảo
 
-* **AWS Machine Learning Blog – Run MiniMax models on Amazon Bedrock:**
-https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedrock/
-* **MiniMax Models Documentation on AWS:** https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-minimax.html
+- **AWS Machine Learning Blog – Run MiniMax models on Amazon Bedrock:**
+  https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedrock/
+- **MiniMax Models Documentation on AWS:** https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-minimax.html
+
+<img src="/AWS_ChiTrung/images/Blogs/blog3.png" alt="Blog 3" width="1000" />
+
+## Đường dẫn bài viết
+
+[https://www.facebook.com/groups/awsstudygroupfcj/posts/2228501271248166](https://www.facebook.com/groups/awsstudygroupfcj/posts/2228501271248166)

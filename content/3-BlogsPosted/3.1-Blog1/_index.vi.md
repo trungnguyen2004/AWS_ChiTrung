@@ -49,7 +49,7 @@ Amazon Bedrock
   │ (Stream response real-time)
   ▼
 Client nhận dữ liệu dạng stream
-````
+```
 
 Khởi tạo client: client trỏ `endpoint_url` về API Gateway, tắt chế độ tự ký client-side (`signature_version = UNSIGNED`) và đính kèm JWT token trong header.
 
@@ -63,9 +63,9 @@ Phản hồi dạng stream: API Gateway stream trực tiếp từng chunk dữ l
 
 Nhờ đặt ở tầng API Gateway, bạn có thể dễ dàng bổ sung các tính năng nâng cao:
 
-* Prompt & Response Caching: cache các câu hỏi phổ biến để giảm chi phí API và độ trễ.
-* AWS WAF Integration: thêm các rule bảo mật chống SQLi, XSS hoặc giới hạn IP.
-* Custom Content Filtering: thêm logic lọc dữ liệu nhạy cảm (PII) tại Lambda trước khi gửi prompt tới Bedrock.
+- Prompt & Response Caching: cache các câu hỏi phổ biến để giảm chi phí API và độ trễ.
+- AWS WAF Integration: thêm các rule bảo mật chống SQLi, XSS hoặc giới hạn IP.
+- Custom Content Filtering: thêm logic lọc dữ liệu nhạy cảm (PII) tại Lambda trước khi gửi prompt tới Bedrock.
 
 ## Kết Luận
 
@@ -73,10 +73,13 @@ Mô hình AI Gateway cân bằng tốt giữa developer experience và enterpris
 
 ## Tài liệu tham khảo
 
-* **AWS Compute Blog – Building an AI gateway to Amazon Bedrock with Amazon API Gateway:**
+- **AWS Compute Blog – Building an AI gateway to Amazon Bedrock with Amazon API Gateway:**
   https://aws.amazon.com/blogs/compute/building-an-ai-gateway-to-amazon-bedrock-with-amazon-api-gateway/
-  
-* **GitHub Repository:**
+- **GitHub Repository:**
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
 
 <img src="/AWS_ChiTrung/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
+
+## Đường dẫn bài viết
+
+[https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/](https://www.facebook.com/groups/awsstudygroupfcj/posts/2226894971408796/)

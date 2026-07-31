@@ -63,7 +63,7 @@ MiniMax M2.5 Model
   │ (5) Synthesizes & responds with natural language
   ▼
 Client receives the final result
-````
+```
 
 Implementation details (OpenAI Python SDK):
 
@@ -87,6 +87,12 @@ The addition of the MiniMax family on Amazon Bedrock provides another powerful o
 
 ## References
 
-* **AWS Machine Learning Blog – Run MiniMax models on Amazon Bedrock:**
-https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedrock/
-* **MiniMax Models Documentation on AWS:** https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-minimax.html
+- **AWS Machine Learning Blog – Run MiniMax models on Amazon Bedrock:**
+  https://aws.amazon.com/blogs/machine-learning/run-minimax-models-on-amazon-bedrock/
+- **MiniMax Models Documentation on AWS:** https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-minimax.html
+
+<img src="/AWS_ChiTrung/images/Blogs/blog3.png" alt="Blog 3" width="1000" />
+
+## Published Post
+
+[https://www.facebook.com/groups/awsstudygroupfcj/posts/2228501271248166](https://www.facebook.com/groups/awsstudygroupfcj/posts/2228501271248166)

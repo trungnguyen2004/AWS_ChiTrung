@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 01/06/2026 đến ngày 31/07/2026
 
-<img src="/AWS_ChiTrung/images/avatar.jpg" alt="avatar" width="500" />
+<img src="/AWS_ChiTrung/images/avatar.png" alt="avatar" width="500" />
 
 ### Nội dung báo cáo
 

@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 01/06/2026 to 31/07/2026
 
-<img src="/AWS_ChiTrung/images/avatar.jpg" alt="avatar" width="500" />
+<img src="/AWS_ChiTrung/images/avatar.png" alt="avatar" width="500" />
 
 ### Report Content
 

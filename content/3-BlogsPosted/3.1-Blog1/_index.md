@@ -79,5 +79,5 @@ The AI Gateway pattern strikes a great balance between developer experience and 
 * **GitHub Repository:**
   https://github.com/aws-samples/amazon-api-gateway-ai-gateway-pattern
   
-<img src="/AWS_ChiTrung/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
+<img src="/images/Blogs/blog1.png" alt="Blog 1" width="1000" />
 

@@ -20,11 +20,11 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 ### [Event 1](4.1-Event1/)
 
-&emsp;**Tên sự kiện:** FCAJ x Agentic AI Build Week
+&emsp;**Tên sự kiện:** Định hướng nghề nghiệp & Kiến trúc AWS
 
-&emsp;**Thời gian:** 09:00 ngày 25/07/2025
+&emsp;**Thời gian:** 09:00 ngày 13/06/2025
 
-&emsp;**Địa điểm:** Online qua youtube
+&emsp;**Địa điểm:** Tầng 26, Tòa nhà Bitexco, 02 Hải Triều, Phường Sài Gòn, Thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 

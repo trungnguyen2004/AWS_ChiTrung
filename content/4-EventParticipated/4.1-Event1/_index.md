@@ -6,123 +6,66 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Career Development & AWS Architecture”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The meetup was organized to provide participants with practical insights into the working environment of Cloud Computing, DevOps, and Data Analytics. Through experience sharing from engineers and industry professionals, the event helped participants gain a better understanding of career opportunities, essential technical and soft skills, and how AWS technologies are applied in real-world projects.
+
+The organizers aimed to achieve the following objectives:
+
+- **Career Orientation:** Help students and beginners gain a clearer understanding of career paths such as Cloud Engineer, DevOps Engineer, and Data Analytics Engineer.
+- **Industry Experience Sharing:** Introduce real working environments, software development processes, and the key skills required in professional organizations.
+- **Enhancing AWS Knowledge:** Demonstrate how to design and deploy cloud-based systems on AWS through practical use cases and real-world examples.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
-
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Working Culture in Professional Organizations
 
-- Long product release cycles → Lost revenue/missed opportunities
-- Inefficient operations → Reduced productivity, higher costs
-- Non-compliance with security regulations → Security breaches, loss of reputation
+The speakers shared their experiences working in multinational companies, emphasizing collaboration among technical teams and the importance of effective communication throughout the software development process. In addition to technical expertise, teamwork and a continuous learning mindset were highlighted as essential qualities for long-term career growth.
 
-#### Transitioning to modern application architecture – Microservices
+#### Career Path of a Data Analytics Engineer
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+This session introduced the role of a Data Analytics Engineer in modern organizations, including responsibilities such as collecting, processing, and analyzing data to support business decision-making. The speaker also shared recommended learning paths and introduced commonly used tools in the field of data analytics.
 
-- **Queue Management**: Handle asynchronous tasks
-- **Caching Strategy**: Optimize performance
-- **Message Handling**: Flexible inter-service communication
+#### DevOps Engineering and System Deployment
 
-#### Domain-Driven Design (DDD)
+Participants gained a clearer understanding of the responsibilities of a DevOps Engineer, particularly in automating deployment workflows, monitoring systems, and bridging the gap between development and operations teams. The speaker also introduced several industry-standard tools and practices commonly used in real-world projects.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts
-- **Bookstore case study**: Demonstrates real-world DDD application
-- **Context mapping**: 7 patterns for integrating bounded contexts
+#### Growing with AWS
 
-#### Event-Driven Architecture
+The speaker shared a personal learning journey, from joining the First Cloud AI Journey community to working on real AWS projects. Practical advice on learning strategies, hands-on practice, and preparing for AWS certification exams provided valuable guidance for beginners pursuing a career in cloud computing.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming
-- **Benefits**: Loose coupling, scalability, resilience
-- **Sync vs async comparison**: Understanding the trade-offs
+#### Designing a URL Shortener System on AWS
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria for appropriate choice
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+One of the highlights of the meetup was a presentation on the architecture of a URL Shortener system built on AWS. The speaker explained how services such as Amazon CloudFront, AWS WAF, and AWS Amplify can be combined to create a scalable, high-performance, and secure web application.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Career Orientation
 
-- **Business-first approach**: Always start from the business domain, not the technology
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams
-- **Bounded contexts**: Identifying and managing complexity in large systems
+The meetup gave me a clearer understanding of the roles and responsibilities of Cloud Engineers, DevOps Engineers, and Data Analytics Engineers in professional environments. It also provided valuable guidance for planning my learning path and future career in cloud computing.
 
-#### Technical Architecture
+#### Professional Skills
 
-- **Event storming technique**: Practical method for modeling business processes
-- Use **event-driven communication** instead of synchronous calls
-- **Integration patterns**: When to use sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless
+Besides technical knowledge, I realized that critical thinking, communication, and teamwork are essential skills for collaborating effectively and solving problems in real-world software development projects.
 
-#### Modernization Strategy
+#### AWS Knowledge
 
-- **Phased approach**: No rushing — follow a clear roadmap
-- **7Rs framework**: Multiple modernization paths depending on the application
-- **ROI measurement**: Cost reduction + business agility
+Through the URL Shortener case study, I gained a better understanding of how multiple AWS services can be integrated to build applications that are scalable, high-performing, and secure, while also learning the design considerations behind cloud-based system architectures.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams
-- **Refactor microservices**: Use bounded contexts to define service boundaries
-- **Implement event-driven patterns**: Replace some sync calls with async messaging
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity
+- **Strengthen my learning roadmap:** Build a more structured learning plan for AWS, Cloud Computing, and related technical skills to better prepare for future career opportunities.
+- **Apply AWS architecture concepts:** Use the system design principles and AWS architecture presented during the meetup as references for academic assignments and personal projects.
+- **Improve professional skills:** Focus on developing communication, teamwork, and problem-solving skills to collaborate more effectively in group projects and real-world development environments.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the FCAJ Meetup gave me the opportunity to learn from experienced engineers working in the fields of Cloud Computing and DevOps. Through their personal stories about learning, working, and career development, I gained a better understanding of the skills that employers value and the different career opportunities available in the cloud industry.
 
-#### Learning from highly skilled speakers
-
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.
-
-#### Hands-on technical exposure
-
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.
-
-#### Leveraging modern tools
-
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.
-
-#### Networking and discussions
-
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.
-
-#### Lessons learned
-
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.
+One of the most valuable sessions was the presentation on designing a URL Shortener system on AWS, which provided a practical example of how multiple AWS services can be integrated to build a scalable, secure, and high-performance application. In addition, the discussions on critical thinking, communication, and teamwork offered useful insights that I can apply to my studies and future software development projects.
 
 #### Some event photos
-
-_Add your event photos here_
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

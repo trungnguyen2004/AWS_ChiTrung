@@ -10,9 +10,9 @@ Workshop: Triển khai hạ tầng Web trên Cloud và thiết lập bảo mật
 
 ### Nội dung
 
-1. [Giới thiệu](5.1-Introduction/)
-2. [Chuẩn bị](5.2-Prerequisite/)
-3. [Các bước triển khai](5.3-implementation-steps/)
-4. [Kết quả thử nghiệm & Thực nghiệm](5.4-test-results--experimentation/)
-5. [Dọn dẹp tài nguyên](5.5-clean-up/)
-6. [Khó khăn & Hướng phát triển](5.6-difficulties--development-direction/)
+1. [Giới thiệu](5.1-Workshop-overview/)
+2. [Chuẩn bị](5.2-Prerequiste/)
+3. [Hạ tầng Mạng VPC & Database RDS](5.3-S3-vpc/)
+4. [Lưu trữ S3, ECR & Đóng gói Docker](5.4-S3-onprem/)
+5. [Máy chủ EC2 & Luồng Triển khai CI/CD](5.5-Policy/)
+6. [Tên miền, CloudWatch & Hướng phát triển](5.6-Cleanup/)

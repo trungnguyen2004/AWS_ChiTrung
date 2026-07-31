@@ -1,40 +1,60 @@
 ---
-title: "Các bước chuẩn bị"
-date: 2026-07-26
+title: "Chuẩn bị"
+date: 2026-07-30
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-### Các bước chuẩn bị
+Trước khi bắt đầu triển khai dự án **Tracker Maintenance System** trên AWS, cần chuẩn bị môi trường máy tính cá nhân và các quyền truy cập IAM an toàn.
 
-#### Tài khoản và Truy cập (AWS IAM & CLI)
+---
 
-Hệ thống yêu cầu một tài khoản AWS đang hoạt động với quyền quản trị viên IAM. Để tuân thủ Nguyên tắc Quyền hạn tối thiểu (Principle of Least Privilege), nhóm phát triển không sử dụng tài khoản Root chính mà thay vào đó tạo một tài khoản nhà phát triển phụ tên là **Tracker-Developer** để cấp quyền và lấy các khóa bảo mật nhằm kết nối từ máy trạm làm việc thông qua các bước sau:
+### Bước 5.2.1: Chuẩn bị Môi trường Máy cá nhân (Local Workstation)
 
-- **Bước 1 (Cấu hình trên AWS Console):** Đăng nhập vào AWS Management Console bằng tài khoản quản trị viên và điều hướng đến **IAM (Identity and Access Management)** → **Users (Người dùng)** → chọn người dùng **Tracker-Developer**. Di chuyển đến tab **Security credentials (Thông tin bảo mật)**, tìm đến phần **Access keys (Khóa truy cập)** và chọn **Create access key (Tạo khóa truy cập)**. Chọn **Command Line Interface (CLI)** làm trường hợp sử dụng (use case), đồng ý với các điều khoản và xác nhận để hệ thống tạo cặp khóa: **Access Key ID** và **Secret Access Key**. Tải xuống tệp `.csv` chứa thông tin khóa bảo mật này.
+1. Cài đặt **JDK 21 (Amazon Corretto hoặc Temurin)** và **Node.js v20 LTS** trên máy cá nhân.
+2. Cài đặt **Docker Desktop & Git** để đóng gói và kiểm thử container cục bộ.
+3. Chuẩn bị file `.env` cá nhân và đảm bảo các thông tin nhạy cảm (`AWS_ACCESS_KEY_ID`, `JWT_SECRET`, mật khẩu database) đã được khai báo trong `.gitignore`.
 
-- **Bước 2 (Cấu hình trên máy trạm cục bộ):** Mở Terminal hoặc PowerShell trên máy tính cá nhân và chạy lệnh sau:
+---
 
-```bash
-aws configure
-````
+### Bước 5.2.2: Khởi tạo IAM User duy nhất (`tracker-s3-uploader-2`) cho S3 & ECR
 
-Nhập **Access Key ID** và **Secret Access Key** đã được tạo ở Bước 1. Thiết lập **Default region name** thành `ap-southeast-1` (Singapore - vùng triển khai lý tưởng để tối ưu hóa độ trễ mạng cho người dùng tại Việt Nam) và **Default output format** thành `json`. Cấu hình này sẽ tự động được lưu trong thư mục người dùng (`~/.aws/` trên Linux/macOS hoặc `%USERPROFILE%\.aws\` trên Windows).
+Để cấp quyền cho Backend Spring Boot tải ảnh nghiệm thu lên S3 và cho phép GitHub Actions đẩy Docker Image lên Amazon ECR, khởi tạo 01 IAM User duy nhất (`tracker-s3-uploader-2`):
 
-> [!NOTE]
-> Tab **IAM Security credentials** với phần **Access keys** được sử dụng để tạo các khóa kết nối CLI.
+1. Truy cập **AWS IAM Console** => **Users** => Chọn **Create user**.
+2. Nhập tên user: `tracker-s3-uploader-2`.
+3. Tại phần **Permissions options**, chọn **Attach policies directly**.
+4. Gắn 02 chính sách quyền chuẩn của AWS:
+   - `AmazonEC2ContainerRegistryFullAccess` (Quyền quản lý và push Docker image ECR)
+   - `AmazonS3FullAccess` (Quyền upload và truy xuất hình ảnh S3)
+5. Xác nhận tạo user, sau đó vào mục **Security credentials** => **Create access key** => Chọn **Command Line Interface (CLI)**.
+6. Lưu lại cặp khóa **Access Key ID** và **Secret Access Key** để nạp vào `.env` backend và GitHub Secrets.
 
-#### Môi trường Máy trạm Cục bộ và Mã nguồn
+<div style="text-align: center; margin: 20px 0;">
 
-Đảm bảo máy trạm đã cài đặt thành công môi trường **Node.js** (phiên bản 18 trở lên) và **Python** (phiên bản 3.10 trở lên) để phục vụ cho việc phát triển Backend (FastAPI/Node.js) cũng như đóng gói giao diện Frontend (React/Vue).
+![Khởi tạo IAM User](iam-user-setup.png?classes=shadow)
 
-Cài đặt **Git** để quản lý mã nguồn. Cần đặc biệt chú ý kiểm tra cấu hình tệp `.gitignore` chuẩn xác trước khi commit để tránh việc vô tình đẩy các thông tin nhạy cảm (như API keys) lên kho lưu trữ trực tuyến.
+  <div style="font-weight: bold; margin-top: 8px; color: #555;">Hình 5.2.1. Chi tiết IAM User (tracker-s3-uploader-2) với 2 chính sách AmazonEC2ContainerRegistryFullAccess và AmazonS3FullAccess đính kèm.</div>
+</div>
 
-Chuẩn bị sẵn tệp `.env` tại môi trường local chứa các biến môi trường thiết yếu như chuỗi kết nối cơ sở dữ liệu (`DB_URL`) và khóa bí mật mã hóa token (`JWT_SECRET`).
+---
 
-#### Lựa chọn Vùng Cơ sở hạ tầng
+### Bước 5.2.3: Khởi tạo IAM Role cho Máy chủ EC2
 
-Lựa chọn vùng cơ sở hạ tầng mạng AWS tại Singapore (`ap-southeast-1`) làm vùng triển khai mặc định. Điều này đảm bảo tốc độ phản hồi (latency) thấp nhất, mang lại trải nghiệm truy cập mượt mà cho hệ thống Tracker Maintenance, đồng thời hỗ trợ đầy đủ các dịch vụ AWS cốt lõi cấu thành nên kiến trúc.
+Cấp quyền cho máy chủ EC2 kéo Docker Image từ ECR và đẩy log về CloudWatch mà không cần lưu khóa truy cập cố định trên máy chủ:
 
+1. Truy cập **IAM Console** => **Roles** => Chọn **Create role**.
+2. Chọn Trusted entity type: **AWS Service**, trường hợp sử dụng: **EC2**.
+3. Gắn 02 chính sách quyền chuẩn của AWS:
+   - `AmazonEC2ContainerRegistryReadOnly`
+   - `CloudWatchAgentServerPolicy`
+4. Đặt tên Role: `tracker-ec2-role` và nhấn **Create role**.
 
+---
+
+### Bước 5.2.4: Tại sao cần dùng IAM User (`tracker-s3-uploader-2`) thay vì Root Account hoặc `admin1`?
+
+- **Nguyên tắc Quyền Tối thiểu (Principle of Least Privilege):** Chỉ cấp đúng quyền S3/ECR cho ứng dụng qua `tracker-s3-uploader-2` thay vì dùng tài khoản quản trị toàn quyền (`admin1` / Root).
+- **Cách ly Rủi ro Bảo mật:** Nếu Access Key bị lộ, rủi ro chỉ giới hạn trong phạm vi S3/ECR mà không làm mất kiểm soát toàn bộ tài khoản AWS.
+- **Khả năng Truy vết (Auditability):** Mọi hành động gọi API S3/ECR đều được AWS CloudTrail ghi lại rõ danh tính `tracker-s3-uploader-2`.

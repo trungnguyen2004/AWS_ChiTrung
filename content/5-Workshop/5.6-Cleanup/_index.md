@@ -1,20 +1,16 @@
 ---
-title : "Difficulties & Development Direction"
-date : 2024-01-01
-weight : 6
-chapter : false
-pre : " <b> 5.6. </b> "
+title: "DNS, Monitoring & Future Roadmap"
+date: 2026-07-30
+weight: 6
+chapter: false
+pre: " <b> 5.6. </b> "
 ---
-### Challenges & Future Development
 
-#### Challenges Encountered
+In this section, configure custom domain DNS & SSL certificates, monitor application container logs via CloudWatch, review resource cleanup procedures, and explore future architectural roadmaps.
 
-* **Hidden network permission error (ENI)**: During the initial phase of deploying the `Process_ESP32_Tracker_Telemetry` Lambda function into the Private VPC subnet, the system denied network access. After consulting the AWS Knowledge Center regarding the `CreateNetworkInterface` error, it was discovered that the function lacked permissions to create internal virtual network interfaces. This was resolved by attaching the managed `AWSLambdaVPCAccessExecutionRole` policy to its IAM Role.
-* **Security policy conflict (Bucket Policy vs. Endpoint Policy)**: When securing the `tracker-maintenance-storage` bucket, blocking all public access too early—before accurately specifying the VPC Endpoint ARN—resulted in the internal Lambda function itself being denied permission to generate S3 Presigned URLs (Access Denied). The author had to trace errors through CloudWatch logs and utilize the AWS CLI to debug and rectify the policy configuration sequence.
-* **Inconsistent sensor data handling**: Telemetry payloads transmitted from the ESP32 boards were occasionally malformed or interrupted due to signal interference or critically low battery, initially causing the Backend system to crash during JSON parsing. The author had to implement robust data validation mechanisms and strict `try-catch` blocks within the Lambda function.
+### Content Steps
 
-#### Future Development Directions
-
-* **Infrastructure as Code (IaC) Deployment**: Transition all manual Web Console configurations (VPC, Subnets, Lambda, Endpoint, IAM, S3) to centrally managed code using AWS CloudFormation or Terraform. This will make it effortless to replicate the environment to support thousands of IoT devices with a single deployment command.
-* **Integrating MQTT protocol with AWS IoT Core**: To significantly optimize the ESP32's battery life and ensure stable connectivity in weak network conditions, the architecture is planned to migrate from standard HTTP REST API calls (via API Gateway) to the lightweight MQTT protocol managed by the AWS IoT Core service.
-* **Building a Fleet Management Dashboard**: Synchronize discrete metrics from CloudWatch Alarms and system logs into a unified monitoring interface. This dashboard will provide a visual map of device locations, real-time battery levels, and hardware error alerts across the entire tracker fleet, thereby streamlining the fieldwork coordination for the maintenance team.
+1. [5.6.1 Configure Route 53 DNS & ACM SSL Certificate](5.6.1-route53-acm/)
+2. [5.6.2 Centralized Logging with CloudWatch Logs](5.6.2-cloudwatch-logs/)
+3. [5.6.3 Resource Clean Up Guide (Stop vs. Terminate)](5.6.3-resource-cleanup/)
+4. [5.6.4 Difficulties Encountered & Future Roadmap](5.6.4-difficulties-roadmap/)
